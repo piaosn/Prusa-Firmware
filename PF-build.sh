@@ -126,7 +126,6 @@
 # 13 May 2020, leptun    , If cleanup files do not exist don't try to.
 #### Start check if OSTYPE is supported
 OS_FOUND=$( command -v uname)
-
 case $( "${OS_FOUND}" | tr '[:upper:]' '[:lower:]') in
   linux*)
     TARGET_OS="linux"
